@@ -1,0 +1,176 @@
+header, nav, article, footer, #elementleft, #elementright{
+	display: block;
+	background-color: #f2e6ff;	
+}
+body{
+	margin: 0;
+	background-color: #f2e6ff;	
+}
+header{
+	padding: 1em;
+	text-align: center;
+}
+
+header p {
+	font-size: 1em;
+	color: black;
+	font-weight: bold;
+	word-spacing: 0em;
+	line-height: 1.5em;
+	text-align: left;
+	font-family: "Source Sans Pro";
+	padding-left: 2em;
+	padding-right:2em;
+}
+
+h1, h2, h3{
+	border-bottom-width: 0.5em;
+	border-bottom-color: gray;
+	border-bottom-style: groove;
+	letter-spacing: 0.5em;
+	padding: 1.5em;
+	color: black;
+	background-color: #ccccff;
+	font-style: italic;
+}
+
+h1 {
+	font-size: 2em;
+	margin-top: 3em;
+	margin-right: 1em;
+	margin-bottom: 0.5em;
+	margin-left: 1em;
+	text-align: center;
+	position: relative;
+}
+
+h2 {
+	font-size: 1em;
+	margin-top: 3em;
+	margin-right: 2em;
+	margin-bottom: 3em;
+	margin-left: 2em;
+	text-align: left;
+}
+
+h3 {
+	font-size: 1em;
+	margin: 3em;
+	text-align: left;
+}
+h4 {
+	color: #006666;
+	font-size: 1.25em;
+	margin: 3em;
+	margin-bottom: 0.5em;
+	font-style: italic;
+	text-align: left;
+	letter-spacing: 0.5em;
+}
+
+nav {
+	width: 100%;
+}
+
+/* Class created to define unordered lists under nav */
+.nav_ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	background-color: #ccccff;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/* 'a' items under li */
+li a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 10px 134.35px;
+	text-decoration: none;
+	font-style: italic;
+}
+
+/* change the colour of li a item on the nav bar when hovering over it, if it is not the current page */
+li a:hover:not(.current) {
+	background-color: #006666;
+	color: grey;
+}
+
+/* Define the colour of the current page selected on the nav bar */
+.current {
+	background-color: #f2e6ff;
+	color: black;
+}
+
+article{ 
+	padding-top: 1em;
+	padding-bottom: .5em;
+	width: 100%;
+}
+
+/* created this ID selector to float a section to the left, in this case I used it for my contact.html page under article. */
+#elementleft{
+	float:left;
+	width: 50%;
+	text-align: center;
+}
+
+/* created this ID selector to float a section to the right, in this case I used it for my contact.html page under article. */
+#elementright {
+	float:right;
+	width: 50%;
+	text-align: center;
+}
+
+article p, li {
+	color: black;
+	font-weight: bold;
+	letter-spacing: 0.15em;
+	word-spacing: 0em;
+	line-height: 1.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-family: "Source Sans Pro";
+	margin-left:2em;
+	margin-right:2em;
+}
+/* a class to reduce the font size */
+.smallerfont{
+	font-size: 75%;
+}
+
+footer{
+	clear: both;
+	padding: 1em;
+}
+
+table, th, td { 
+	border: 1px solid gray;
+	color: black;
+	background-color: #ccccff;
+	font-weight: bold;
+	font-family: "Source Sans Pro";
+}
+
+/* a class to provide a gray background colour. In this case, I used this class for my table on index.html, my homepage, to show the level of skill */
+.colspan_positive{
+	background-color: gray;
+}
+
+/* a class to auto-align the table on index.html to span 75% of the page width with an auto margin, aligning it to the center. */
+.center {
+	margin: auto;
+    width: 75%;
+}
+
+/* fixed size for image files for consistency, seen on contact.html page */
+img {
+	border-radius: 50%;
+	width: 256px;
+	height: 176.5px;
+}
